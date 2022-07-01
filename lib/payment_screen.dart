@@ -4,6 +4,19 @@ import 'package:webview_flutter/webview_flutter.dart';
 class PaymentScreen extends StatefulWidget {
   final String url;
 
+/*
+
+Just click on the floating action button
+
+
+
+My problem is after the payment is successfull,
+the nevigation delegate never gets called
+because the url never changes.
+This makes it difficult for me to get response from
+the webview.
+*/
+
   const PaymentScreen({
     Key? key,
     required this.url,
